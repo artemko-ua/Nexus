@@ -1,13 +1,14 @@
-# Nexux
+# Nexux - A Minimal Unix-Like Operating System
 
-Nexux is a minimal Unix-like operating system built from scratch, following the philosophy of full customization and simplicity. Inspired by Arch Linux, it allows users to configure everything, from the bootloader to the graphical interface.
+Nexux is a custom-built Unix-like operating system designed for flexibility, simplicity, and full customization. It is developed from scratch, allowing users to configure everything, from the bootloader to the graphical environment. Nexux is ideal for those who want to understand the fundamentals of operating systems and explore low-level programming.
 
 ## Features
-- **Custom bootloader** written in Assembly
-- **Minimal Bash-based shell** for command-line interaction
-- **Modular and configurable architecture**
-- **Lightweight and built from scratch**
-- **Designed for learning and flexibility**
+- **Custom Bootloader** – Written in Assembly for direct hardware interaction
+- **Minimal Bash-Based Shell** – A lightweight command-line interface
+- **Modular and Configurable Architecture** – Users can build their system as needed
+- **ISO Image Available** – Ready for testing and installation
+- **Lightweight and Built from Scratch** – No unnecessary components
+- **Designed for Learning and Experimentation**
 
 ## Getting Started
 ### Prerequisites
@@ -15,10 +16,20 @@ To build and run Nexux, you will need:
 - A Linux-based development environment
 - GCC and Binutils (for cross-compilation)
 - NASM (for Assembly development)
-- QEMU (for testing the OS in a virtual machine)
+- QEMU or VirtualBox (for testing the OS)
 
-### Building Nexux
-Clone the repository and follow these steps:
+### Download the ISO
+You can download the latest Nexux ISO from the [Releases](https://github.com/yourusername/nexux/releases) page.
+
+### Running Nexux
+To boot Nexux from the ISO, use QEMU:
+```sh
+qemu-system-x86_64 -cdrom nexux.iso
+```
+Alternatively, you can create a bootable USB and test it on real hardware.
+
+## Building Nexux
+If you want to build Nexux from source:
 ```sh
 # Clone the repository
 git clone https://github.com/yourusername/nexux.git
@@ -28,14 +39,8 @@ cd nexux
 make
 ```
 
-### Running Nexux
-You can run Nexux using QEMU:
-```sh
-make run
-```
-
 ## Contributing
-Contributions are welcome! Feel free to submit issues, feature requests, or pull requests.
+We welcome contributions! If you find bugs, have feature requests, or want to contribute code, feel free to submit an issue or pull request.
 
 ## License
 Nexux is released under the MIT License.
