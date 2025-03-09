@@ -23,7 +23,7 @@ To build and run Nexux, you will need:
 - QEMU or VirtualBox (for testing the OS)
 
 ### Download the ISO
-You can download the latest Nexux ISO from the [Releases](https://github.com/yourusername/nexux/releases) page.
+You can download the latest Nexux ISO from the [Releases]page. (Soon)
 
 ### Running Nexux
 To boot Nexux from the ISO, use QEMU:
@@ -36,8 +36,8 @@ Alternatively, you can create a bootable USB and test it on real hardware.
 If you want to build Nexux from source:
 ```sh
 # Clone the repository
-git clone https://github.com/yourusername/nexux.git
-cd nexux
+git clone https://github.com/artemko-ua/Nexus.git
+cd Nexux
 
 # Build the OS
 make
